@@ -1,26 +1,18 @@
 require_relative 'teacher'
-
+require_relative 'hr'
 class ApprenticeTeacher < Teacher
 
+  include Hr
+
+  RATING = 80
+
   def initialize(options={})
-    @target_raise = 800
     super
+    @target_raise = 800
   end
 
-  def teach_stuff
-    response = ""
-    response += "Listen, class, this is how everything works. "
-    response += "*drops crazy knowledge bomb* "
-    response += "... You're welcome."
-    response
-  end
-
-
-  def set_performance_rating(rating)
-    response = ""
-    if rating > 80
-   super
- end
+  def performance_rating
+    raise NoMethodError, 'NoMethodError'
   end
 
   def attend_training_session

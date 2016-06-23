@@ -17,12 +17,6 @@ class Dbc
       "Cool, I've always wanted to teach phase #{num}!"
   end
 
-def teach_stuff
-    response = ""
-    response += "Listen, class, this is how everything works"
-    response += "*drops flat-out insane knowledge bomb* "
-    response += "... You're welcome. *saunters away*"
-    response
-  end
+
 
 end
