@@ -4,6 +4,7 @@ class Student < Dbc
 
   def initialize(options = {})
     @phase = 1
+    super
   end
 
 
@@ -15,7 +16,7 @@ class Student < Dbc
     else
       response = "Oooh, phase #{num}. I hope I'm ready!"
     end
-    super
+
   end
 
   def learn_stuff

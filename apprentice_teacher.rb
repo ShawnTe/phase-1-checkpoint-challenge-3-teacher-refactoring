@@ -4,6 +4,7 @@ class ApprenticeTeacher < Teacher
 
   def initialize(options={})
     @target_raise = 800
+    super
   end
 
   def teach_stuff
